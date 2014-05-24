@@ -20,6 +20,7 @@ function setListeners(mysocket) {
         console.log("GET LINE EVENT DATA: ", data);
         sendLine(data);
     });
+    /*
     mysocket.on('disconnect', function() {
         if(sockets.length > 0){
             console.log("SOCKET INFO: ", mysocket);
@@ -28,6 +29,7 @@ function setListeners(mysocket) {
             console.log("AFTER REMOVE: ", sockets.length);
         }
     });
+    */
 }
 
 function sendLine(data) {
