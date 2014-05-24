@@ -18,7 +18,7 @@ angular.module('app').config(function(RestangularProvider, $routeProvider, $loca
         .when('/signup', { templateUrl: '/partials/account/signup', controller: 'crSignupCtrl' })
         .when('/profile', { templateUrl: '/partials/account/profile', controller: 'crProfileCtrl', resolve: routeRoleChecks.user })
         .when('/register', { templateUrl: '/partials/person/register', controller: 'crPersonRegisterCtrl', resolve: routeRoleChecks.user })
-        .when('/board', { templateUrl: '/partials/board/index', controller: 'crWhiteBoardCtrl'})
+        .when('/board', { templateUrl: '/partials/board/index', controller: 'crWhiteBoardCtrl', resolve: routeRoleChecks.user})
         .otherwise({ redirectTo: "/" });
 });
 
