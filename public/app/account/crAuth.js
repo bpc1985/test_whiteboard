@@ -1,4 +1,4 @@
-angular.module('app').factory('crAuth', function($http, $q, crIdentity, crUser){
+angular.module('app').factory('crAuth', function($http, $q, $location, crIdentity, crUser){
     return {
         authenticateUser: function(username, password){
             var deferred = $q.defer();
@@ -7,6 +7,7 @@ angular.module('app').factory('crAuth', function($http, $q, crIdentity, crUser){
                     var user = new crUser();
                     angular.extend(user, response.data.user);
                     crIdentity.currentUser = user;
+                    $location.path('/board');
                     deferred.resolve(true);
                 }
                 else{
