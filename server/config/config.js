@@ -9,7 +9,7 @@ module.exports = {
   },
   production: {
     rootPath: rootPath,
-    db: 'mongodb://production_path_for_mongodb',
+    db: 'mongodb://test:test@ds053948.mongolab.com:53948/test_whiteboard',
     port: process.env.PORT || 80
   }
 }
