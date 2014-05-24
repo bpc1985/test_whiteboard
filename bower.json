@@ -1,0 +1,20 @@
+{
+  "name": "customerRegistry",
+  "version": "0.0.0",
+  "authors": [
+    "Hung Ho <ho.ngoc.hung2812@gmail.com>"
+  ],
+  "description": "Customer Registry",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "jquery": "~2.1.0",
+    "toastr": "~2.0.1",
+    "angular": "~1.2.14",
+    "angular-resource": "~1.2.14",
+    "angular-route": "~1.2.14",
+    "bootstrap": "~3.1.1",
+    "jquery-minicolors": "~2.1.6",
+    "socket.io-client": "~0.9.17"
+  }
+}

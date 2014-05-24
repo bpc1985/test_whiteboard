@@ -1,0 +1,22 @@
+{
+  "name": "test_whiteboard",
+  "version": "0.0.0",
+  "description": "Test WhiteBoard",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Hung Ho",
+  "license": "ISC",
+  "dependencies": {
+    "jade": "~1.2.0",
+    "express": "~3.4.8",
+    "stylus": "~0.42.2",
+    "mongoose": "~3.8.8",
+    "passport": "~0.2.0",
+    "passport-local": "~0.1.6",
+    "socket.io": "~0.9.16"
+  },
+  "devDependencies": {
+  }
+}
